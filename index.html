@@ -4,50 +4,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Backend Developer Services</title>
+  <title>Mariano Rapaport</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
   <style>
     /* Additional Styles */
   </style>
 </head>
 
-<body class="bg-dark text-white">
-  <!-- Theme Chooser -->
-  <div class="absolute top-4 right-4">
-    <label for="themeSwitch" class="flex items-center cursor-pointer">
-      <span class="mr-2">Light Mode</span>
-      <div class="relative">
-        <input id="themeSwitch" type="checkbox" class="hidden">
-        <div class="toggle-dot absolute w-6 h-6 rounded-full bg-white"></div>
-        <div class="toggle-bg absolute w-12 h-6 rounded-full bg-gray-500"></div>
-      </div>
-      <span class="ml-2">Dark Mode</span>
-    </label>
-  </div>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navigation -->
+  <nav class="bg-gray-900 py-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="#" class="text-white text-2xl font-semibold">Mariano Rapaport</a>
+      <ul class="flex space-x-4">
+        <li><a href="#" class="text-white">Home</a></li>        
+        <li><a href="#" class="text-white">Blog</a></li>
+        <li><a href="#" class="text-white">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-gray-900 text-white py-20">
+    <div class="container mx-auto">
+      <h1 class="text-5xl font-bold mb-4">Backend Development</h1>
+      <p class="text-xl mb-8">Hire an experienced developer to help out with your needs.</p>
+      <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">Get Started</a>
+    </div>
+  </section>
 
   <!-- Content Section -->
-  <div class="container mx-auto p-4">
-    <h1 class="text-4xl font-bold mb-4">Backend Developer Services</h1>
-    <p class="mb-4">Hello! I'm a backend developer with expertise in building robust and scalable web applications.</p>
-    <p class="mb-4">Whether you need API development, database management, or server-side scripting, I've got you covered.</p>
-    <p class="mb-4">Feel free to reach out to discuss your project requirements or to inquire about my services.</p>
-    <div class="flex">
-      <div class="mr-4">
-        <h2 class="text-xl font-semibold mb-2">Contact Information:</h2>
-        <p>Name: Mariano Rapaport</p>
-        <p>Email: marianorapaport@gmail.com</p>        
-      </div>
-      <div>
-        <h2 class="text-xl font-semibold mb-2">Skills:</h2>
-        <ul>          
-          <li>Java</li>
-          <li>Spring Boot</li>
-          <li>Microservice architectures</li>
-          <li>Database Management</li>
-        </ul>
+  <section class="py-20">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-semibold mb-6">Skills</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg p-6">
+          <h3 class="text-xl font-semibold mb-4">Java</h3>
+          <p class="mb-4">4+ year experience working on Java projects.</p>          
+        </div>
+        <div class="bg-white rounded-lg p-6">
+          <h3 class="text-xl font-semibold mb-4">Spring Boot</h3>
+          <p class="mb-4">Highly experienced on the most widely spread Java and microservices framework.</p>          
+        </div>
+        <div class="bg-white rounded-lg p-6">
+          <h3 class="text-xl font-semibold mb-4">Databases</h3>
+          <p class="mb-4">Worked on several database engines, including PostgreSQL, MySQL, SQLServer, among others.</p>          
+        </div>
       </div>
     </div>
-  </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 py-8">
+    <div class="container mx-auto text-white text-center">
+      <p>&copy; 2023 Mariano Rapaport. All rights reserved.</p>
+    </div>
+  </footer>
 
   <script>
     const themeSwitch = document.getElementById('themeSwitch');
